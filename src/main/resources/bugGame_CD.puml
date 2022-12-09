@@ -1,0 +1,72 @@
+
+
+
+@startuml
+
+static class BugIO {
+  + {static} write(String text) : void
+  + {static} readString(String text) : String
+  + {static} readInt(String text) : Integer
+}
+
+class DataHandler {
+  + saveGame(PlayerData data, fileName) : void
+  + loadGame(fileName) : PlayerData
+}
+
+class Bug {
+  - name : String
+  - type : String
+  - maxHealth : Integer
+  - curHealth : Integer
+  - defense : Integer
+  - attack : Integer
+  + attack(Bug bug) : Integer
+  + defend() : void
+  + heal(Integer health) : void
+  + heal() : void
+}
+
+class mainMethod {
+  + run() : String
+}
+
+class BugFactory {
+  + createBug(PlayerData data) : Bug
+  + createBug(PlayerData data, Integer quantity) : List<Bug>
+}
+
+class GameLoop {
+  + play() : void
+  - battle() : void
+}
+
+class BugBattle {
+  + startBattle(Bug player, PlayerData data) : void
+}
+
+class BattleLoop {
+  + battle(Bug player, List<Bug> enemies) : BattleResult
+}
+
+class BattleResult {
+  - didWin : Boolean
+  - battleLog : List<String>
+}
+
+class PlayerData {
+  - playerBug : Bug
+  - stage : Integer
+}
+
+mainMethod --> GameLoop
+DataHandler --> PlayerData
+GameLoop --> BugBattle
+GameLoop --> DataHandler
+GameLoop --> PlayerData
+BugBattle --> BattleLoop
+BugBattle --> BugFactory
+BugBattle --> Bug
+BattleLoop --> BattleResult
+
+@enduml

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../mockito-4.9.0" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../mockito-4.9.0" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/android" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/bom" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/errorprone" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/extTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/groovyInlineTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/groovyTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/inline" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/junit-jupiter" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/junitJupiterExtensionTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/junitJupiterInlineMockMakerExtensionTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/junitJupiterParallelTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/kotlinReleaseCoroutinesTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/kotlinTest" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/memory-test" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/module-test" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/osgi-test" />
+            <option value="$PROJECT_DIR$/../mockito-4.9.0/subprojects/proxy" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

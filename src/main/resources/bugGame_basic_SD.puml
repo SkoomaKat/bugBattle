@@ -1,0 +1,101 @@
+
+
+@startuml
+
+actor Player as player
+participant main as main
+participant GameLoop as gameLoop
+participant DataHandler as dh
+participant BugBattle as bb
+participant BugFactory as factory
+participant BattleLoop as battleLoop
+participant bugWithTurn as bugWithTurn
+
+player -> main : run game
+activate main
+
+main -> gameLoop : play()
+activate gameLoop
+
+gameLoop -> dh : loadGame(fileName)
+activate dh
+
+dh -> gameLoop : PlayerData data
+deactivate dh
+
+loop While player does not choose "quit" option, and is not dead.
+
+    gameLoop -> gameLoop : getPlayerChoice()
+
+    alt If player chooses battle
+
+        gameLoop -> bb : startBattle(PlayerData data)
+        activate bb
+
+        bb -> factory : createBug(PlayerData data)
+        activate factory
+
+        factory -> bb : Bug enemy
+        deactivate factory
+
+        bb -> battleLoop : battle(Bug player, List<Bug> enemy)
+        activate battleLoop
+
+        battleLoop -> battleLoop : Determine turn order.
+
+        loop While both contestants are alive.
+            battleLoop -> battleLoop : getBugChoice(bugWithTurn)
+
+
+            alt if attacking
+                battleLoop -> bugWithTurn : attack(Bug otherBug)
+                activate bugWithTurn
+                bugWithTurn -> battleLoop : Integer damage
+                deactivate bugWithTurn
+            end
+
+            alt if defending
+                battleLoop -> bugWithTurn : defend()
+                activate bugWithTurn
+                bugWithTurn -> battleLoop : void
+                deactivate bugWithTurn
+            end
+
+        end turnLoop
+
+    battleLoop -> battleLoop : generateBattleResult()
+
+    battleLoop -> bb : BattleResult generateBattleResult
+    deactivate battleLoop
+
+    bb -> bb : set player data based on battle result
+    bb -> gameLoop : PlayerData data
+    deactivate bb
+
+    gameLoop -> dh : saveGame(PlayerData data, fileName)
+    activate dh
+
+    dh -> gameLoop : PlayerData
+    deactivate dh
+
+    end battleAlt
+
+    alt If player chooses invalid choice
+        gameLoop -> gameLoop : throw InvalidInputException()
+    end
+
+    alt If player chooses to quit the game
+        gameLoop -> dh : saveGame(PlayerData data, fileName)
+        activate dh
+
+        dh -> gameLoop : PlayerData
+        deactivate dh
+
+        gameLoop -> main : void
+    end
+
+end
+
+gameLoop -> main : void
+
+@enduml
