@@ -12,4 +12,8 @@ public class TerminalInputHandler {
     public String getInput() {
         return scanner.nextLine();
     }
+
+    public String getKey() {
+        return scanner.next();
+    }
 }

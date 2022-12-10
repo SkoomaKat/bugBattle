@@ -1,9 +1,10 @@
 package org.foxgames;
 
 public class Main {
+    static GameLoop game = new GameLoop();
     public static void main(String[] args)
     {
-        System.out.println("BugBattle, by jfox is beginning");
+        game.play();
     }
 
     /**

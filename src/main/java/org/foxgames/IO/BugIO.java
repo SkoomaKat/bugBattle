@@ -19,6 +19,15 @@ public class BugIO {
         System.out.println(text);
     }
 
+    public void await() {
+        inputHandler.getKey();
+    }
+
+    public String getKey(String text) {
+        writeln(text);
+        return inputHandler.getKey();
+    }
+
     public String readString(String text) {
         writeln(text);
         return inputHandler.getInput();

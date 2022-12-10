@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c00dc3e-dcb0-4b68-abc7-7690a49b302b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/IOSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/TerminalInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/battle/BattleLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/battle/BugBattle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/exceptions/InvalidInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/factory/BugFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/models/BattleResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/models/Bug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/models/PlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/persistence/DataHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_CD.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_basic_SD.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/BugIOReadIntTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/BugIOReadStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/IOSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/IO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/TerminalInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/TerminalInputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/BugIOReadIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/BugIOReadIntTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +107,7 @@
       <recent name="util" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BugIOReadIntTest.read_validInteger_returnsCorrectInteger">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.foxgames.Main" />
       <module name="bugBattle.main" />
