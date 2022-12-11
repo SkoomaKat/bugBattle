@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c00dc3e-dcb0-4b68-abc7-7690a49b302b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/BranchHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/StoryBranch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/TerminalInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/TerminalInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/battle/BattleLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BattleLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/battle/BugBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BugBattle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +32,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bugBattle" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bugBattle" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bugBattle" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bugBattle" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.junit.jupiter:junit-jupiter-api:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -224,7 +233,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

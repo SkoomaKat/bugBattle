@@ -10,18 +10,18 @@ public class GameLoop {
     BugIO bugIO = IO.getBugIO();
     PlayerData playerData;
     String[] validOptions = new String[] {"battle", "quit"} ;
+    boolean playing = true;
 
     public void play() {
         bugIO.writeln("BugBattle, by jfox is beginning");
 
-        Choice playerChoice = getChoice(bugIO.readString(
-                String.format("Please enter a choice. \n" +
-                        "Valid options are %s", String.join(", ", validOptions))));
-        BranchHandler handler = new BranchHandler(playerChoice, playerData);
-        handler.play();
-
-        bugIO.writeln("\n\nPress enter to continue...\n");
-        bugIO.await();
+        while (playing) {
+            Choice playerChoice = getChoice(bugIO.readString(
+                    String.format("Please enter a choice. \n" +
+                            "Valid options are %s", String.join(", ", validOptions))));
+            BranchHandler handler = new BranchHandler(playerChoice, playerData);
+            handler.play();
+        }
     }
 
     /**
