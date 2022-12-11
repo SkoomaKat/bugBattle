@@ -2,6 +2,7 @@ package org.foxgames.IO;
 
 import org.foxgames.exceptions.InvalidInputException;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class BugIO {
@@ -20,12 +21,11 @@ public class BugIO {
     }
 
     public void await() {
-        inputHandler.getKey();
-    }
-
-    public String getKey(String text) {
-        writeln(text);
-        return inputHandler.getKey();
+        try {
+            inputHandler.await();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public String readString(String text) {

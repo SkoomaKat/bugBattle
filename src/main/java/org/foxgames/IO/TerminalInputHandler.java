@@ -1,5 +1,6 @@
 package org.foxgames.IO;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class TerminalInputHandler {
@@ -13,7 +14,7 @@ public class TerminalInputHandler {
         return scanner.nextLine();
     }
 
-    public String getKey() {
-        return scanner.next();
+    public void await() throws IOException {
+        System.in.read();
     }
 }

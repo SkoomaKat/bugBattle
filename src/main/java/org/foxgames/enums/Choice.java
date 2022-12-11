@@ -3,6 +3,5 @@ package org.foxgames.enums;
 public enum Choice {
     BATTLE,
     QUIT,
-    UNSUPPORTED;
-
+    INVALID;
 }
