@@ -25,7 +25,7 @@ public class GameLoop {
     }
 
     /**
-     * Converts String input to Choice enum.
+     * Converts String input to Choice enum .
      * @return The choice equivalent of the given string (capitalized). If no choices align with the given string then returns Choice.UNDEFINED
      */
     private Choice getChoice(String choice) {
