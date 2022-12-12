@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c00dc3e-dcb0-4b68-abc7-7690a49b302b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/invalid/InvalidBranch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/util/ChoiceConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_battle_CD.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_mainGameLoop_SD.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/ChoiceConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/factory/BugFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/factory/BugFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/models/BattleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/models/BattleResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/persistence/DataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/persistence/DataHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/BranchHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/BranchHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/StoryBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/StoryBranch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BugBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BattleBranch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bugGame_CD.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bugGame_mainLoop_CD.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bugGame_basic_SD.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bugGame_battle_SD.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/util/BugIOReadIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IO/BugIOReadIntTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/util/BugIOReadStringTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +97,8 @@
       <recent name="D:\bugBattle\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bugBattle" />
+      <recent name="D:\bugBattle\src" />
       <recent name="D:\bugBattle\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
