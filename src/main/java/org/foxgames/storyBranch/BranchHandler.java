@@ -1,48 +1,35 @@
 package org.foxgames.storyBranch;
 
+import org.foxgames.IO.BugIO;
 import org.foxgames.IO.IO;
 import org.foxgames.enums.Choice;
 import org.foxgames.models.PlayerData;
-import org.foxgames.storyBranch.battle.BugBattle;
+import org.foxgames.persistence.DataHandler;
 
 public class BranchHandler {
+    BugIO bugIO;
+    DataHandler dataHandler;
     PlayerData playerData;
-    StoryBranch branch;
     Choice playerChoice;
 
-    public BranchHandler(Choice playerChoice, PlayerData playerData) {
-        switch (playerChoice) {
-            case BATTLE:
-                branch = new BugBattle(IO.getBugIO());
-                break;
-            default:
-                branch = null;
-                break;
-        }
-
+    public BranchHandler(Choice playerChoice, DataHandler dataHandler, BugIO bugIO) {
         this.playerChoice = playerChoice;
-        this.playerData = playerData;
+        this.dataHandler = dataHandler;
+        this.bugIO = bugIO;
+
+        this.playerData = dataHandler.getCurrentData();
     }
 
     public void play() {
-        if (playerChoice.equals(Choice.INVALID)) {
-            IO.getBugIO().writeln("You you entered an invalid choice. Please try again.");
-            return;
-        }else if (playerChoice.equals(Choice.QUIT)) {
+        if (playerChoice.equals(Choice.QUIT)) {
             quitGame();
         }
 
-        saveGame(branch.play(playerData));
+        dataHandler.saveGame(playerChoice.getBranch().play(playerData));
     }
-
-    private void saveGame(PlayerData data) {
-
-    }
-
     private void quitGame() {
-        saveGame(playerData);
-        IO.getBugIO().writeln("Quitting game. Press enter to exit.");
-        IO.getBugIO().await();
+        bugIO.writeln("Quitting game. Press enter to exit.");
+        bugIO.await();
         System.exit(0);
     }
 }

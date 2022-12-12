@@ -1,17 +1,12 @@
 package org.foxgames;
 
+import org.foxgames.IO.IO;
+import org.foxgames.persistence.DataHandler;
+
 public class Main {
-    static GameLoop game = new GameLoop();
     public static void main(String[] args)
     {
+        GameLoop game = new GameLoop(new DataHandler(), IO.getBugIO());
         game.play();
-    }
-
-    /**
-     * Method to ensure JUnit testing is functioning. Do not delete.
-     * @return true
-     */
-    public boolean testMethod() {
-        return true;
     }
 }

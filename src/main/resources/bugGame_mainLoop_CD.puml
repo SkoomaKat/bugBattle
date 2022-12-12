@@ -1,0 +1,54 @@
+
+
+
+@startuml
+
+static class BugIO {
+  + {static} write(String text) : void
+  + {static} readString(String text) : String
+  + {static} readInt(String text) : Integer
+}
+
+class DataHandler {
+- playerData : PlayerData
+  + saveGame(PlayerData data, fileName) : void
+  + loadGame(fileName) : PlayerData
+}
+
+enum Choice {
+    - StoryBranch branch
+    + getBranch() : StoryBranch
+}
+
+class mainMethod {
+  + run() : String
+}
+
+class GameLoop {
+  + play() : void
+}
+
+class PlayerData {
+  - playerBug : Bug
+  - stage : Integer
+}
+
+class BranchHandler {
+    - bugIO : BugIO
+    - dataHandler : DataHandler
+    - playerData : PlayerData
+    - playerChoice : Choice
+    + play() : void
+}
+
+class StoryBranch {
+    + play(PlayerData) : PlayerData
+}
+
+mainMethod --> GameLoop
+DataHandler --> PlayerData
+GameLoop --> BranchHandler
+BranchHandler --> DataHandler
+BranchHandler --> StoryBranch
+
+@enduml

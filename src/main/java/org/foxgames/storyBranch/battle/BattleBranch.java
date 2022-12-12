@@ -4,10 +4,10 @@ import org.foxgames.IO.BugIO;
 import org.foxgames.models.PlayerData;
 import org.foxgames.storyBranch.StoryBranch;
 
-public class BugBattle implements StoryBranch {
-    BugIO bugIO;
+public class BattleBranch implements StoryBranch {
+    private BugIO bugIO;
 
-    public BugBattle(BugIO bugIO) {
+    public BattleBranch(BugIO bugIO) {
         this.bugIO = bugIO;
     }
 

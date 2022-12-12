@@ -1,0 +1,65 @@
+
+
+@startuml
+
+actor Player as player
+participant main as main
+participant GameLoop as gameLoop
+participant ChoiceConverter as choiceConverter
+participant BranchHandler as branchHandler
+participant DataHandler as dh
+participant StoryBranch as branch
+
+
+player -> main : run game
+activate main
+
+main -> gameLoop : play()
+activate gameLoop
+
+gameLoop -> dh : loadGame(fileName)
+activate dh
+
+dh -> gameLoop : PlayerData
+deactivate dh
+
+loop
+
+    gameLoop -> choiceConverter : getChoice(String playerInput)
+    activate choiceConverter
+
+    choiceConverter -> gameLoop : Choice
+    deactivate choiceConverter
+
+    gameLoop -> gameLoop : Create and initialize a BranchHandler
+
+    gameLoop -> branchHandler : play()
+    activate branchHandler
+
+    alt If player chose to quit
+
+        branchHandler -> player : Exit with status code 0
+
+    end quitChoice
+
+    branchHandler -> branch : play()
+    activate branch
+
+    branch -> branchHandler : PlayerData data
+    deactivate branch
+
+    branchHandler -> dh : saveGame(data)
+    activate dh
+
+    dh -> branchHandler
+    deactivate dh
+
+    branchHandler -> gameLoop
+    deactivate branchHandler
+
+end
+
+gameLoop -> main : void
+main -> player
+
+@enduml

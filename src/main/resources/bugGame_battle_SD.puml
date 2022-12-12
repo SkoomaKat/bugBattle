@@ -1,0 +1,60 @@
+
+
+@startuml
+
+actor GameLoop as gameLoop
+participant BranchHandler as handler
+participant BattleBranch as bb
+participant BugFactory as factory
+participant BattleLoop as battleLoop
+participant bugWithTurn as bugWithTurn
+
+gameLoop -> handler : Makes "Battle" choice
+activate handler
+
+handler -> bb : play(PlayerData data)
+activate bb
+
+bb -> factory : createBug(PlayerData data)
+activate factory
+
+factory -> bb : Bug enemy
+deactivate factory
+
+bb -> battleLoop : battle(Bug player, List<Bug> enemy)
+activate battleLoop
+
+battleLoop -> battleLoop : Determine turn order.
+
+loop While both contestants are alive.
+    battleLoop -> battleLoop : getBugChoice(bugWithTurn)
+
+
+    alt if attacking
+        battleLoop -> bugWithTurn : attack(Bug otherBug)
+        activate bugWithTurn
+        bugWithTurn -> battleLoop : Integer damage
+        deactivate bugWithTurn
+    end
+
+    alt if defending
+        battleLoop -> bugWithTurn : defend()
+        activate bugWithTurn
+        bugWithTurn -> battleLoop : void
+        deactivate bugWithTurn
+    end
+
+end turnLoop
+
+battleLoop -> battleLoop : generateBattleResult()
+
+battleLoop -> bb : BattleResult generateBattleResult
+deactivate battleLoop
+
+bb -> bb : set player data based on battle result
+bb -> handler : PlayerData data
+deactivate bb
+
+handler -> gameLoop : Returns to GameLoop
+
+@enduml

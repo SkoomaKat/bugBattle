@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c00dc3e-dcb0-4b68-abc7-7690a49b302b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/invalid/InvalidBranch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/util/ChoiceConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_battle_CD.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bugGame_mainGameLoop_SD.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/util/ChoiceConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/enums/Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/factory/BugFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/factory/BugFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/models/BattleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/models/BattleResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/persistence/DataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/persistence/DataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/BranchHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/BranchHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/StoryBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/StoryBranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BugBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/foxgames/storyBranch/battle/BattleBranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bugGame_CD.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bugGame_mainLoop_CD.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bugGame_basic_SD.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bugGame_battle_SD.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/BugIOReadIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IO/BugIOReadIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/BugIOReadStringTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +88,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mainline" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -78,17 +104,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "D:/bugBattle/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bugBattle\src\main\resources" />
       <recent name="D:\bugBattle\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\bugBattle\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="enums" />
       <recent name="util" />
     </key>
   </component>
@@ -109,29 +141,6 @@
     <configuration name="Build_Check" type="CompoundRunConfigurationType">
       <toRun name="bugBattle [build]" type="GradleRunConfiguration" />
       <toRun name="bugBattle [check]" type="GradleRunConfiguration" />
-      <method v="2" />
-    </configuration>
-    <configuration name="BugIOReadIntTest.read_validInteger_returnsCorrectInteger" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;util.BugIOReadIntTest.read_validInteger_returnsCorrectInteger&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="bugBattle [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
@@ -197,18 +206,87 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="BugIOReadIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bugBattle.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IO" />
+      <option name="MAIN_CLASS_NAME" value="IO.BugIOReadIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BugIOReadIntTest.read_validInteger_returnsCorrectInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bugBattle.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IO" />
+      <option name="MAIN_CLASS_NAME" value="IO.BugIOReadIntTest" />
+      <option name="METHOD_NAME" value="read_validInteger_returnsCorrectInteger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BugIOReadIntTest.read_withLongString_throwsInvalidInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bugBattle.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IO" />
+      <option name="MAIN_CLASS_NAME" value="IO.BugIOReadIntTest" />
+      <option name="METHOD_NAME" value="read_withLongString_throwsInvalidInputException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BugIOReadIntTest.read_withNonIntegerString_throwsInvalidInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bugBattle.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IO" />
+      <option name="MAIN_CLASS_NAME" value="IO.BugIOReadIntTest" />
+      <option name="METHOD_NAME" value="read_withNonIntegerString_throwsInvalidInputException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Compound.Build_Check" />
       <item itemvalue="Gradle.bugBattle [test]" />
       <item itemvalue="Gradle.bugBattle [build]" />
       <item itemvalue="Gradle.bugBattle [check]" />
-      <item itemvalue="Gradle.BugIOReadIntTest.read_validInteger_returnsCorrectInteger" />
+      <item itemvalue="JUnit.BugIOReadIntTest" />
+      <item itemvalue="JUnit.BugIOReadIntTest.read_validInteger_returnsCorrectInteger" />
+      <item itemvalue="JUnit.BugIOReadIntTest.read_withLongString_throwsInvalidInputException" />
+      <item itemvalue="JUnit.BugIOReadIntTest.read_withNonIntegerString_throwsInvalidInputException" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BugIOReadIntTest.read_validInteger_returnsCorrectInteger" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BugIOReadIntTest.read_withLongString_throwsInvalidInputException" />
+        <item itemvalue="JUnit.BugIOReadIntTest" />
+        <item itemvalue="JUnit.BugIOReadIntTest.read_withNonIntegerString_throwsInvalidInputException" />
+        <item itemvalue="JUnit.BugIOReadIntTest.read_validInteger_returnsCorrectInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -234,8 +312,22 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/foxgames/IO/BugIO.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bugBattle$BugIOReadIntTest.ic" NAME="BugIOReadIntTest Coverage Results" MODIFIED="1670819989811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

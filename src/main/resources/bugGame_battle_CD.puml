@@ -3,17 +3,6 @@
 
 @startuml
 
-static class BugIO {
-  + {static} write(String text) : void
-  + {static} readString(String text) : String
-  + {static} readInt(String text) : Integer
-}
-
-class DataHandler {
-  + saveGame(PlayerData data, fileName) : void
-  + loadGame(fileName) : PlayerData
-}
-
 class Bug {
   - name : String
   - type : String
@@ -27,22 +16,13 @@ class Bug {
   + heal() : void
 }
 
-class mainMethod {
-  + run() : String
-}
-
 class BugFactory {
   + createBug(PlayerData data) : Bug
   + createBug(PlayerData data, Integer quantity) : List<Bug>
 }
 
-class GameLoop {
-  + play() : void
-  - battle() : void
-}
-
-class BugBattle {
-  + startBattle(Bug player, PlayerData data) : void
+class BattleBranch {
+  + play(PlayerData playerData) : PlayerData playerData
 }
 
 class BattleLoop {
@@ -59,14 +39,9 @@ class PlayerData {
   - stage : Integer
 }
 
-mainMethod --> GameLoop
-DataHandler --> PlayerData
-GameLoop --> BugBattle
-GameLoop --> DataHandler
-GameLoop --> PlayerData
-BugBattle --> BattleLoop
-BugBattle --> BugFactory
-BugBattle --> Bug
+BattleBranch --> BattleLoop
+BattleBranch --> BugFactory
+BattleBranch --> Bug
 BattleLoop --> BattleResult
 
 @enduml
